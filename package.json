@@ -1,0 +1,14 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "working on sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass assets/sass/style.scss assets/css/style.css -w"
+  },
+  "author": "jyoti",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

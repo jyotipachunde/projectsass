@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+@media all and (max-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+_ body {
+  font-weight: 400;
+  line-height: 1.7;
+  font-family: "Lato", sans-serif;
+  color: #777;
+  font-size: 1rem;
+  padding: 1.875rem;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes moveinright {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  75% {
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: relative;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../images/hero.jpg);
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: inline-block;
+  width: 75px;
+}
+.logo-box img {
+  width: 100%;
+}
+.logo-box-primary {
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  animation: moveinleft 1s ease-in-out;
+  color: #fff;
+}
+.logo-box-secondary {
+  font-size: 15px;
+  letter-spacing: 30px;
+  animation: moveinright 1s ease-in-out;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.logo-box h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.btn1, .btn1:link, .btn1:visited {
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+  color: #777;
+}
+.btn1:hover, .btn1:focus {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.btn1:active {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=style.css.map */
