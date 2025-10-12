@@ -6,10 +6,18 @@
 
 html {
     font-size: 16px;
-    @media all and (max-width: 1200px) {
+    @media all and (max-width: 600px) {
         font-size: 10px; 
+        .logo-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 75px;
     }
-}_
+}
+}
+
 
 body {
     font-weight: 400;

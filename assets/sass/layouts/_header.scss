@@ -23,18 +23,18 @@
         font-size: 60px;
     font-weight: 200;
 letter-spacing: 10px;
-animation: moveinleft 1s ease-in-out ;
+animation: moveinleft 1.5s ease-in-out ;
 color: $color-white;
 
 }
     &-secondary{
         font-size: 15px;
         letter-spacing: 30px;
-        animation:moveinright 1s ease-in-out;
+        animation:moveinright 1.5s ease-in-out;
         color: $color-white;
         margin-bottom: 20px;
     }
-   h1{ padding:0;
+   h1 .logo-box{ padding:0;
  margin: 0;}
 
 }
