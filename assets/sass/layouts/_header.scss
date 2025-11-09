@@ -1,31 +1,39 @@
 
 .header {
-    display: flex;
+
+     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 106, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero.jpg);
+    background-size: 100% 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     position: relative;
-    background-image: linear-gradient(to right bottom, $color-pri-light, $color-pri-dark), url(../images/hero.jpg);
-}
+    height: 90vh;
+    z-index: 1;
+   //background-color: #7ed56f;
+
 .logo-box {
     position: absolute;
-    top:40px;
-    left: 40px;
-    display: inline-block;
+    top:20px;
+    left: 20px;
+    display:inline-block;
     width: 75px;
+    color: white;
+    .logo{
+            display:inline-block;
 
-    img{
+    }
+
+   img{
         width: 100%;
     }
     &-primary{
         font-size: 60px;
     font-weight: 200;
-letter-spacing: 10px;
+letter-spacing: 5px;
 animation: moveinleft 1.5s ease-in-out ;
 color: $color-white;
-
 }
     &-secondary{
         font-size: 15px;
@@ -36,6 +44,8 @@ color: $color-white;
     }
    h1 .logo-box{ padding:0;
  margin: 0;}
+
+}
 
 }
 

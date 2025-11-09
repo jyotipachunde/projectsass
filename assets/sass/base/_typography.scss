@@ -1,0 +1,15 @@
+.heading-pri:is(:hover, :focus, :active) {
+    transform: scale(1.1);
+    text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.heading-pri {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #7ed56a, rgba(40, 180, 133, 0.8));
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+    margin-bottom: 40px;
+    transition: all 0.4s ease-in-out;
+}
